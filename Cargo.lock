@@ -3,5 +3,9 @@
 version = 4
 
 [[package]]
-name = "it_genius_rust_beginners_course"
+name = "ch_01_hello_world"
+version = "0.1.0"
+
+[[package]]
+name = "ch_02_types_variables"
 version = "0.1.0"

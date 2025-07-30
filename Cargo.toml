@@ -1,6 +1,4 @@
-[package]
-name = "it_genius_rust_beginners_course"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
+[workspace]
+members = [
+    "section_01_basics/ch_01_hello_world"
+, "section_01_basics/ch_02_types_variables"]
