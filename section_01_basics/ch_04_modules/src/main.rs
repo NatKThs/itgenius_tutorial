@@ -1,14 +1,24 @@
-// mod greeting;
+mod meetings;
 mod greetings;
 
-// use nkgreetings::morning;
-// use nkgreetings::evening;
+// use greetings::morning;
+// use greetings::evening;
+
+// use greetings::{
+//     morning,
+//     evening,
+// };
+
 use greetings::morning::*;
 use greetings::evening::*;
+use greetings::special;
 
 fn main() {
-    println!("Hello, world!");
-    // greeting::hello();
+
+    meetings::hello();
+    meetings::goodbye();
+
     good_morning();
     good_evening();
+    special::holiday::happy_new_year();
 }
