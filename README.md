@@ -29,10 +29,27 @@
 
 ### Section 02: Control Flow และ Ownership
 - `section_02_control_ownership/` – การควบคุมการทำงานและระบบความเป็นเจ้าของ
-  - การควบคุมการทำงาน (if, loop, match)
-  - Ownership และ borrowing system
-  - References และ lifetimes
-  - การจัดการ memory อย่างปลอดภัย
+  - `ch_01_ifelse_condition/` – เงื่อนไข if/else และการตัดสินใจ
+  - `ch_02_match_condition/` – Pattern matching และ match expressions
+  - `ch_03_loop/` – การวนซ้ำ (for, while, loop)
+  - `ch_04_stack_heap/` – หน่วยความจำ Stack และ Heap
+  - `ch_05_ownership_borrowing/` – Ownership และ Borrowing system
+  - `ch_06_ownership_borrowing_recap/` – ทบทวน Ownership และ Borrowing
+  - `exercise/` – แบบฝึกหัด Control Flow และ Ownership
+
+### Section 03: Collections และ Error Handling
+ - `section_03_collections_errors/` – โครงสร้างข้อมูลและการจัดการข้อผิดพลาด
+   - `ch_01_vector/` – Vector และการจัดการ collections
+   - `ch_02_string/` – String และการจัดการข้อความ
+   - `ch_03_hashmap/` – HashMap และการจัดการ key-value
+   - `ch_04_option_result/` – Option, Result และ error handling
+
+### Section 04: Structs, Enum, Method, Trait
+- `section_04_structs_traits_project/` – การสร้าง custom types และการใช้งาน trait
+  - `ch_01_struct/` – การสร้างและใช้งาน struct
+  - `ch_02_enum/` – การสร้างและใช้งาน enum
+  - `ch_03_method/` – การสร้าง method ให้กับ struct/enum
+  - `ch_04_trait/` – การสร้างและใช้งาน trait
 
 ## 🚀 วิธีใช้งาน
 
@@ -52,12 +69,33 @@ cargo run
 
 ### การรันแต่ละโปรเจ็กต์
 ```bash
-# รันจากไดเรกทอรีหลัก (workspace)
+# Section 01: พื้นฐาน Rust
 cargo run -p ch_01_hello_world
 cargo run -p ch_02_types_variables
 cargo run -p ch_03_functions
 cargo run -p ch_04_modules
 cargo run -p exercise_module
+
+# Section 02: Control Flow และ Ownership
+cargo run -p ch_01_ifelse_condition
+cargo run -p ch_02_match_condition
+cargo run -p ch_03_loop
+cargo run -p ch_04_stack_heap
+cargo run -p ch_05_ownership_borrowing
+cargo run -p ch_06_ownership_borrowing_recap
+cargo run -p exercise
+
+# Section 03: Collections และ Error Handling
+cargo run -p ch_01_vector
+cargo run -p ch_02_string
+cargo run -p ch_03_hashmap
+cargo run -p ch_04_option_result
+
+# Section 04: Structs, Enum, Method, Trait
+cargo run -p ch_01_struct
+cargo run -p ch_02_enum
+cargo run -p ch_03_method
+cargo run -p ch_04_trait
 
 # หรือเข้าไปในโฟลเดอร์แล้วรัน
 cd section_01_basics/ch_01_hello_world
@@ -65,16 +103,36 @@ cargo run
 ```
 ### การรันแบบ watch
 ```bash
-
 # ติดตั้ง cargo watch (สำหรับ auto-reload)
 cargo install cargo-watch
 
-# รันและ watch การเปลี่ยนแปลงไฟล์ (auto-reload)
+# Section 01: พื้นฐาน Rust
 cargo watch -q -c -x "run -p ch_01_hello_world"
 cargo watch -q -c -x "run -p ch_02_types_variables"
 cargo watch -q -c -x "run -p ch_03_functions"
 cargo watch -q -c -x "run -p ch_04_modules"
 cargo watch -q -c -x "run -p exercise_module"
+
+# Section 02: Control Flow และ Ownership
+cargo watch -q -c -x "run -p ch_01_ifelse_condition"
+cargo watch -q -c -x "run -p ch_02_match_condition"
+cargo watch -q -c -x "run -p ch_03_loop"
+cargo watch -q -c -x "run -p ch_04_stack_heap"
+cargo watch -q -c -x "run -p ch_05_ownership_borrowing"
+cargo watch -q -c -x "run -p ch_06_ownership_borrowing_recap"
+cargo watch -q -c -x "run -p exercise"
+
+# Section 03: Collections และ Error Handling
+cargo watch -q -c -x "run -p ch_01_vector"
+cargo watch -q -c -x "run -p ch_02_string"
+cargo watch -q -c -x "run -p ch_03_hashmap"
+cargo watch -q -c -x "run -p ch_04_option_result"
+
+# Section 04: Structs, Enum, Method, Trait
+cargo watch -q -c -x "run -p ch_01_struct"
+cargo watch -q -c -x "run -p ch_02_enum"
+cargo watch -q -c -x "run -p ch_03_method"
+cargo watch -q -c -x "run -p ch_04_trait"
 
 # หรือ watch ในโฟลเดอร์ของ package
 cd section_01_basics/ch_01_hello_world
@@ -114,12 +172,27 @@ cargo test
 
 ## 🎯 สิ่งที่จะได้เรียนรู้ใน Section 02
 
-- **Control Flow**: เงื่อนไข if/else, loops (for, while, loop)
-- **Pattern Matching**: การใช้ match expressions
-- **Ownership System**: แนวคิดการเป็นเจ้าของข้อมูลใน Rust
-- **Borrowing**: การยืมข้อมูลแบบ immutable และ mutable references
-- **Lifetimes**: การจัดการอายุของข้อมูลในหน่วยความจำ
-- **Memory Safety**: การป้องกันปัญหา memory leaks และ dangling pointers
+- **Chapter 1**: เงื่อนไข if/else และการตัดสินใจในโปรแกรม
+- **Chapter 2**: Pattern matching และการใช้ match expressions
+- **Chapter 3**: การวนซ้ำด้วย for, while, และ loop
+- **Chapter 4**: ความแตกต่างระหว่าง Stack และ Heap memory
+- **Chapter 5**: Ownership system และ Borrowing ใน Rust
+- **Chapter 6**: ทบทวนและฝึกปฏิบัติ Ownership และ Borrowing
+- **Exercise**: แบบฝึกหัดการใช้ Control Flow และ Ownership
+
+## 🎯 สิ่งที่จะได้เรียนรู้ใน Section 03
+
+- **Chapter 1**: Vector และการจัดการ collections
+- **Chapter 2**: String และการจัดการข้อความใน Rust
+- **Chapter 3**: HashMap และการจัดการ key-value
+- **Chapter 4**: Option, Result และ error handling
+
+## 🎯 สิ่งที่จะได้เรียนรู้ใน Section 04
+
+- **Chapter 1**: การสร้างและใช้งาน struct
+- **Chapter 2**: การสร้างและใช้งาน enum
+- **Chapter 3**: การสร้าง method ให้กับ struct/enum
+- **Chapter 4**: การสร้างและใช้งาน trait
 
 ## 🤝 การสนับสนุน
 

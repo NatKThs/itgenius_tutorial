@@ -11,7 +11,23 @@ name = "ch_01_ifelse_condition"
 version = "0.1.0"
 
 [[package]]
+name = "ch_01_struct"
+version = "0.1.0"
+
+[[package]]
+name = "ch_01_vector"
+version = "0.1.0"
+
+[[package]]
+name = "ch_02_enum"
+version = "0.1.0"
+
+[[package]]
 name = "ch_02_match_condition"
+version = "0.1.0"
+
+[[package]]
+name = "ch_02_string"
 version = "0.1.0"
 
 [[package]]
@@ -23,7 +39,15 @@ name = "ch_03_functions"
 version = "0.1.0"
 
 [[package]]
+name = "ch_03_hashmap"
+version = "0.1.0"
+
+[[package]]
 name = "ch_03_loop"
+version = "0.1.0"
+
+[[package]]
+name = "ch_03_method"
 version = "0.1.0"
 
 [[package]]
@@ -31,11 +55,27 @@ name = "ch_04_modules"
 version = "0.1.0"
 
 [[package]]
+name = "ch_04_option_result"
+version = "0.1.0"
+
+[[package]]
 name = "ch_04_stack_heap"
 version = "0.1.0"
 
 [[package]]
+name = "ch_04_trait"
+version = "0.1.0"
+
+[[package]]
 name = "ch_05_ownership_borrowing"
+version = "0.1.0"
+
+[[package]]
+name = "ch_06_ownership_borrowing_recap"
+version = "0.1.0"
+
+[[package]]
+name = "exercise"
 version = "0.1.0"
 
 [[package]]
